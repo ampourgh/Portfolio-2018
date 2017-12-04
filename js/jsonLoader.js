@@ -15,13 +15,13 @@ function populateHeader(jsonObj) {
   myH1.textContent = jsonObj['Name'];
   header.appendChild(myH1);
 
-  socialMedia = ['gitHub', 'linkedIn', 'reddit']
+  socialMedia = ['gitHub', 'linkedIn', 'reddit', 'twitter']
 
   String.prototype.capitalize = function() {
       return this.charAt(0).toUpperCase() + this.slice(1);
   }
 
-  for (i = 0; i < 3; i++) {
+  for (i = 0; i < socialMedia.length; i++) {
     var link = document.createElement("a");
 
     link.href = jsonObj[socialMedia[i]];
