@@ -1,0 +1,25 @@
+{
+  "Name" : "Amir Pourghaed",
+  "internetNickname" : "ampourgh",
+  "linkedIn" : "http://www.github.com/ampourgh",
+  "linkedIn" : "http://www.linkedin.com/ampourgh",
+  "Reddit" : "http://www.reddit.com/users/ampourgh",
+  "members" : [
+    {
+      "projectName" : "Item Catalog",
+      "aboutProject" : [
+        "Web catalog that uses Python's Flask framework and SQLalchemy to store items in a database.",
+        "Utilizes Google's Oauth2 as a quick and secure way to register with the database without going through the a lengthy registration process.",
+        "Efficient way of storing items in an inventory without having to manually create and modify HTML pages."
+      ]
+    },
+    {
+      "projectName" : "Neighborhood Map",
+      "aboutProject" : [
+        "Using the Google Maps API and Wikipedia API, the page features a map with markers that contain information on the location.",
+        "With JavaScript and Knockout.js MVVM model, created a filterable listing that pulls up the marker of the location on the map. ",
+        "Convenient means of looking up sights in Houston, where they are located, and learning general information on said location."
+      ]
+    }
+  ]
+}
