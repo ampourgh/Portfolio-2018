@@ -1,7 +1,12 @@
 * {
 	font-family: 'Barlow Condensed', sans-serif;
   font-size: 25px;
-  background-color: #58FA58;
+}
+
+.navbar {
+}
+
+header {
 }
 
 h1 {
@@ -16,11 +21,11 @@ header {
 }
 
 section {
-  background-color: red;
-  margin-left: auto;
+  /*background-color: red;*/
+  /*margin-left: auto;
   margin-right: auto;
   height: 100px;
-  width: 100%;
+  width: 100%;*/
 }
 
 img {
