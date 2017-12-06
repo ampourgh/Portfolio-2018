@@ -9,7 +9,18 @@ request.onload = function() {
   var profileInfo = request.response;
   populateHeader(profileInfo);
   showInfo(profileInfo);
+  populatenavbar(profileInfo);
 }
+
+function populatenavbar(jsonObj) {
+  var info = jsonObj['members'];
+  var myNavbar = document.getElementById('navbar');
+  for(var i = 0; i < info.length; i++) {
+    myNavbar.textContent += ' ' + info[i].projectName;
+  }
+  myNavbar.appendChild(myNavbar);
+}
+
 function populateHeader(jsonObj) {
   var myH1 = document.createElement('h1');
   myH1.textContent = jsonObj['Name'];
@@ -37,11 +48,11 @@ function populateHeader(jsonObj) {
     header.appendChild(link);
 }
 
-
   var myPara = document.createElement('p');
   myPara.textContent = 'Also known as ' + jsonObj['internetNickname'];
   header.appendChild(myPara);
 }
+
 function showInfo(jsonObj) {
   var info = jsonObj['members'];
   for(var i = 0; i < info.length; i++) {
