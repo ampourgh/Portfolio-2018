@@ -4,6 +4,12 @@
 }
 
 .navbar {
+  background-color: #000;
+  border-radius: 0;
+}
+
+.projectsNavbar {
+  display: inline-block;
 }
 
 header {

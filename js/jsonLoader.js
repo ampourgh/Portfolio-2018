@@ -14,11 +14,14 @@ request.onload = function() {
 
 function populatenavbar(jsonObj) {
   var info = jsonObj['members'];
-  var myNavbar = document.getElementById('navbar');
-  for(var i = 0; i < info.length; i++) {
-    myNavbar.textContent += ' ' + info[i].projectName;
+    for(var i = 0; i < info.length; i++) {
+    var link = document.createElement("a");
+    var myNavbar = document.getElementById('projectsNavbar');
+    var text = document.createTextNode(" " + info[i].projectName);
+    link.setAttribute("href", "#" + info[i].projectName.replace(" ", ""));
+    link.appendChild(text);
+    myNavbar.appendChild(link);
   }
-  myNavbar.appendChild(myNavbar);
 }
 
 function populateHeader(jsonObj) {
@@ -64,6 +67,7 @@ function showInfo(jsonObj) {
     var myList = document.createElement('ul');
     myH2.textContent = info[i].name;
     myPara1.textContent = 'Project Name: ' + info[i].projectName;
+    myPara1.id = info[i].projectName.replace(" ", "");
     myPara3.textContent = 'About Project:';
     var aboutProjects = info[i].aboutProject;
     for(var j = 0; j < aboutProjects.length; j++) {
