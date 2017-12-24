@@ -15,6 +15,10 @@ h1 {
   font-size: 70px;
 }
 
+p {
+	font-size: 50px;
+}
+
 header {
   margin: 20% 0;
   line-height: 50%;
@@ -64,4 +68,8 @@ BODY
 
 .chevron {
   text-align: center;
+}
+
+article {
+	margin: 100px 100px;
 }

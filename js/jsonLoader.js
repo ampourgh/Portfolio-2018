@@ -66,9 +66,9 @@ function showInfo(jsonObj) {
     var myPara3 = document.createElement('p');
     var myList = document.createElement('ul');
     myH2.textContent = info[i].name;
-    myPara1.textContent = 'Project Name: ' + info[i].projectName;
+    myPara1.textContent = 'Project: ' + info[i].projectName;
     myPara1.id = info[i].projectName.replace(" ", "");
-    myPara3.textContent = 'About Project:';
+    myPara3.textContent = 'Info:';
     var aboutProjects = info[i].aboutProject;
     for(var j = 0; j < aboutProjects.length; j++) {
       var listItem = document.createElement('li');
