@@ -15,14 +15,22 @@ request.onload = function() {
 function populatenavbar(jsonObj) {
   var info = jsonObj['members'];
     for(var i = 0; i < info.length; i++) {
-    var link = document.createElement("a");
-    var myNavbar = document.getElementById('projectsNavbar');
-    var text = document.createTextNode(" " + info[i].projectName);
-    link.setAttribute("href", "#" + info[i].projectName.replace(" ", ""));
-    link.appendChild(text);
-    myNavbar.appendChild(link);
+      var link = document.createElement("a");
+      var myNavbar = document.getElementById('projectsNavbar');
+      var text = document.createTextNode(" " + info[i].projectName);
+      link.setAttribute("href", "#" + info[i].projectName.replace(" ", ""));
+      link.appendChild(text);
+      myNavbar.appendChild(link);
+
+      $(link).on('click', function(e) {
+        e.preventDefault();
+        $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 320, 'linear');
+      });
+
   }
 }
+
+
 
 function populateHeader(jsonObj) {
   var myH1 = document.createElement('h1');
