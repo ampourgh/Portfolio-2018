@@ -26,11 +26,22 @@ function populatenavbar(jsonObj) {
         e.preventDefault();
         $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 320, 'linear');
       });
+    }
 
-  }
+    for(var i = 0; i < info.length; i++) {
+      var link2 = document.createElement("a");
+      var myMobileNavbar = document.getElementById('mobileNavbar' + [i]);
+      var text2 = document.createTextNode(" " + info[i].projectName);
+      link2.setAttribute("href", "#" + info[i].projectName.replace(" ", ""));
+      link2.appendChild(text2);
+      myMobileNavbar.appendChild(link2);
+
+      $(link2).on('click', function(e) {
+        e.preventDefault();
+        $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 320, 'linear');
+      });
+    }
 }
-
-
 
 function populateHeader(jsonObj) {
   var myH1 = document.createElement('h1');

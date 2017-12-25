@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Portfolio</title>
     <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:100|Zilla+Slab+Highlight|Coda" rel="stylesheet">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -13,10 +14,24 @@
 
   <body>
       <div class="navbar" id="navbar">
-        <a href="#header" id="navbar">Home</a>
+        <a href="#header" id="header">Home</a>
         <div class="projectsNavbar" id="projectsNavbar">
         </div>
       </div>
+
+      <button class="js-menu menu" type="button">
+      	<span class="bar"></span>
+      </button>
+
+      <nav>
+        <ul>
+          <li><a href="#header">Home</a></li>
+          <li class="mobileNavbar" id="mobileNavbar0"></li>
+          <li class="mobileNavbar" id="mobileNavbar1"></li>
+          <li class="mobileNavbar" id="mobileNavbar2"></li>
+        </ul>
+      </nav>
+
       <header>
       </header>
       <div class="chevron">
@@ -25,6 +40,7 @@
       <section>
         <div id="section-start"></div>
       </section>
+
       <div class="chevron">
         <a href="#navbar">
           <span class="glyphicon glyphicon-chevron-up"></span>
@@ -42,6 +58,21 @@
       e.preventDefault();
       $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 250, 'linear');
     });
+  });
+
+  /* A simple and scalable hamburger menu using css transitions. */
+  var isActive = false;
+
+  $('.js-menu').on('click', function() {
+  	if (isActive) {
+  		$(this).removeClass('active');
+  		$('body').removeClass('menu-open');
+  	} else {
+  		$(this).addClass('active');
+  		$('body').addClass('menu-open');
+  	}
+
+  	isActive = !isActive;
   });
   </script>
   <script src="js/jsonLoader.js"></script>
