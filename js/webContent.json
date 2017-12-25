@@ -21,6 +21,14 @@
         "With JavaScript and Knockout.js MVVM model, created a filterable listing that pulls up the marker of the location on the map. ",
         "Convenient means of looking up sights in Houston, where they are located, and learning general information on said location."
       ]
+    },
+    {
+      "projectName" : "Portfolio Page",
+      "aboutProject" : [
+        "Content of page is stored within JSON file, for easy adjustment of content without the need to modify the HTML pages.",
+        "Hyperlinks feature smooth scroll up and down the page, to make it clear that the user is traversing through the same webpage.",
+        "This."
+      ]
     }
   ]
 }
