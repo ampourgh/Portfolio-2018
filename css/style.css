@@ -62,6 +62,12 @@ NAVIGATION BAR
   display: inline-block;
 }
 
+.goHome {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+}
+
 /*
 BODY
 */
@@ -170,9 +176,9 @@ MOBILE
 	  font-size: 2rem;
 	}
 	nav ul li:hover {
-	  background: blue;
+	  background: #CDCDCD;
 	}
 	.mobileNavbar {
-		
+
 	}
 }
