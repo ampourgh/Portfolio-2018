@@ -15,14 +15,22 @@ h1 {
   font-size: 70px;
 }
 
+header {
+	margin: 20% 0;
+	line-height: 50%;
+	text-align: center;
+}
+
 p {
 	font-size: 50px;
 }
 
-header {
-  margin: 20% 0;
-  line-height: 50%;
-  text-align: center;
+nav {
+	visibility: hidden;
+}
+
+.menu {
+	visibility: hidden;
 }
 
 section {
@@ -84,69 +92,27 @@ article {
 MOBILE
 */
 @media screen and (max-width: 600px) and (min-width: 0px) {
-	.menu {
-	  -webkit-transition: 0.1s -webkit-transform linear;
-	  transition: 0.1s -webkit-transform linear;
-	  transition: 0.1s transform linear;
-	  transition: 0.1s transform linear, 0.1s -webkit-transform linear;
-	  position: relative;
-	  background: 0;
-	  float: left;
-	  margin: 2rem;
-	  height: 2.7rem;
-	  width: 3.5rem;
-	  z-index: 1;
-	  outline: 0;
-	  padding: 0;
-	  border: 0;
+	.navbar {
+		visibility: hidden;
 	}
 
-	.bar, .bar::before, .bar::after {
-	  -webkit-transition: 0.2s background linear 0.1s, 0.2s top linear 0.2s, 0.2s -webkit-transform linear;
-	  transition: 0.2s background linear 0.1s, 0.2s top linear 0.2s, 0.2s -webkit-transform linear;
-	  transition: 0.2s background linear 0.1s, 0.2s top linear 0.2s, 0.2s transform linear;
-	  transition: 0.2s background linear 0.1s, 0.2s top linear 0.2s, 0.2s transform linear, 0.2s -webkit-transform linear;
-	  position: absolute;
-	  background: #000;
-	  margin: auto;
-	  width: 100%;
-	  height: 0.3rem;
-	  content: '';
-	  top: 50%;
-	  left: 0;
+	nav {
+		visibility: visible;
 	}
-	.bar {
-	  margin-top: -0.2rem;
-	}
-	.bar::before {
-	  top: -1.2rem;
-	}
-	.bar::after {
-	  top: 1.2rem;
-	}
-	.bar::before, .bar::after {
-	  -webkit-transform: rotate(0deg);
-	          transform: rotate(0deg);
-	}
-	.active .bar {
+
+	.menu {
+		padding: 0;
+		border: none;
+		visibility: visible;
+		position: fixed;
+		top: 2%;
+		left: 2%;
 	  background: 0;
+	  z-index: 1;
 	}
-	.active .bar::before {
-	  -webkit-transform: rotate(45deg);
-	          transform: rotate(45deg);
-	}
-	.active .bar::after {
-	  -webkit-transform: rotate(-45deg);
-	          transform: rotate(-45deg);
-	}
-	.active .bar::before, .active .bar::after {
-	  top: 0;
-	}
-	.active .bar, .active .bar::before, .active .bar::after {
-	  -webkit-transition: 0.2s background linear 0.1s, 0.2s top linear, 0.2s -webkit-transform linear 0.2s;
-	  transition: 0.2s background linear 0.1s, 0.2s top linear, 0.2s -webkit-transform linear 0.2s;
-	  transition: 0.2s background linear 0.1s, 0.2s top linear, 0.2s transform linear 0.2s;
-	  transition: 0.2s background linear 0.1s, 0.2s top linear, 0.2s transform linear 0.2s, 0.2s -webkit-transform linear 0.2s;
+
+	.nav-icon {
+		background: #fff;
 	}
 
 	nav {
@@ -166,19 +132,19 @@ MOBILE
 	  -webkit-transform: translateX(0);
 	          transform: translateX(0);
 	}
+
 	nav ul {
 	  margin: 0;
 	  list-style: none;
 	  padding: 0;
 	}
+
 	nav ul li {
 	  padding: 20px 5px;
 	  font-size: 2rem;
 	}
+
 	nav ul li:hover {
 	  background: #CDCDCD;
-	}
-	.mobileNavbar {
-
 	}
 }

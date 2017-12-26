@@ -19,8 +19,8 @@
         </div>
       </div>
 
-      <button class="js-menu menu" type="button">
-      	<span class="bar"></span>
+      <button class="menu" type="button">
+      	<span class="nav-icon glyphicon glyphicon-menu-hamburger">NAVIGATION</span>
       </button>
 
       <nav>
@@ -64,7 +64,7 @@
   /* A simple and scalable hamburger menu using css transitions. */
   var isActive = false;
 
-  $('.js-menu').on('click', function() {
+  $('.menu').on('click', function() {
   	if (isActive) {
   		$(this).removeClass('active');
   		$('body').removeClass('menu-open');
