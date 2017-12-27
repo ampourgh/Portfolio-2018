@@ -64,7 +64,7 @@ function populateHeader(jsonObj) {
     link.title = socialMedia[i].capitalize();
 
     var img = document.createElement("img");
-    img.src = 'img/' + socialMedia[i] + '.png';
+    img.src = 'img/' + socialMedia[i] + '.svg';
     link.appendChild(img);
 
     header.appendChild(link);
