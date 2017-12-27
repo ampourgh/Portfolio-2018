@@ -48,7 +48,7 @@ function populateHeader(jsonObj) {
   myH1.textContent = jsonObj['Name'];
   header.appendChild(myH1);
 
-  socialMedia = ['gitHub', 'linkedIn', 'reddit', 'twitter']
+  socialMedia = ['gitHub', 'linkedIn', 'CodePen', 'reddit', 'twitter']
 
   String.prototype.capitalize = function() {
       return this.charAt(0).toUpperCase() + this.slice(1);
