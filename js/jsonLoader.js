@@ -70,7 +70,7 @@ function populateHeader(jsonObj) {
     header.appendChild(link);
 }
 
-  var myPara = document.createElement('p');
+  var myPara = document.createElement('h5');
   myPara.textContent = 'Also known as ' + jsonObj['internetNickname'];
   header.appendChild(myPara);
 }

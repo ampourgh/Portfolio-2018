@@ -7,12 +7,13 @@ a {
 	color: #000;
 }
 
-header {
-}
-
 h1 {
   font-family: 'Zilla Slab Highlight', sans-serif;
   font-size: 70px;
+}
+
+h5 {
+	font-size: 25px;
 }
 
 header {
@@ -113,6 +114,10 @@ MOBILE
 
 	.nav-icon {
 		background: #fff;
+	}
+	.text-nav {
+		vertical-align: text-top;
+		font-size: 26px;
 	}
 
 	nav {
