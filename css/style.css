@@ -170,6 +170,16 @@ article {
 	  background: #CDCDCD;
 	}
 
+	.portrait {
+		display: block;
+ 		margin: 0 auto;
+		height: 15%;
+    width: 15%;
+		border-radius: 100%;
+		border: 10px solid;
+    padding: 2px;
+	}
+
 /*
 MOBILE
 */
