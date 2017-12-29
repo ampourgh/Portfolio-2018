@@ -79,14 +79,29 @@ function showInfo(jsonObj) {
   var info = jsonObj['members'];
   for(var i = 0; i < info.length; i++) {
     var myArticle = document.createElement('article');
+    var gitHub = document.createElement("a");
+    // var webPage = document.createElement("a");
     var myH2 = document.createElement('h2');
     var myPara1 = document.createElement('p');
     var myPara2 = document.createElement('p');
     var myPara3 = document.createElement('p');
     var myList = document.createElement('ul');
+
     myH2.textContent = info[i].name;
     myPara1.textContent = 'Project: ' + info[i].projectName;
     myPara1.id = info[i].projectName.replace(" ", "");
+
+    gitHub.href = jsonObj[info[i].gitHub];
+    gitHub.alt = info[i].projectName.capitalize();
+    gitHub.id = info[i].projectName.capitalize();
+    gitHub.class = info[i].projectName.capitalize();
+    gitHub.title = info[i].projectName.capitalize();
+
+    var imgGitHub = document.createElement("img");
+    imgGitHub.src = 'img/gitHub.svg';
+    gitHub.appendChild(imgGitHub);
+
+
     myPara3.textContent = 'Info:';
     var aboutProjects = info[i].aboutProject;
     for(var j = 0; j < aboutProjects.length; j++) {
@@ -96,6 +111,7 @@ function showInfo(jsonObj) {
     }
     myArticle.appendChild(myH2);
     myArticle.appendChild(myPara1);
+    myArticle.appendChild(gitHub);
     myArticle.appendChild(myPara2);
     myArticle.appendChild(myPara3);
     myArticle.appendChild(myList);

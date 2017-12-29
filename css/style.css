@@ -180,6 +180,13 @@ article {
     padding: 2px;
 	}
 
+	section ul {
+	  -moz-column-width: 12em;
+	  -moz-columns: 12em;
+	  -webkit-columns: 12em;
+	  columns: 12em;
+	}
+
 /*
 MOBILE
 */
