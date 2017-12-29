@@ -28,6 +28,7 @@ nav {
 	visibility: hidden;
 }
 
+
 img {
   padding-left: 1%;
 }
@@ -38,6 +39,7 @@ section *[id]:before {
   margin-top: -50px;
   height: 50px;
 }
+
 
 header {
 	margin: 0;
@@ -78,7 +80,7 @@ NAVIGATION BAR
 .goHome {
 	position: fixed;
 	bottom: 0;
-	right: 0;
+	right: 2%;
 }
 
 .wallpaper {
@@ -114,23 +116,10 @@ article {
 	margin: 100px 100px;
 }
 
-/*
-MOBILE
-*/
-@media screen and (max-width: 600px) and (min-width: 0px) {
-	.navbar {
-		visibility: hidden;
-	}
-
-	nav {
-		visibility: visible;
-		z-index: 2;
-	}
 
 	.menu {
 		padding: 0;
 		border: none;
-		visibility: visible;
 		position: fixed;
 		top: 2%;
 		left: 2%;
@@ -179,5 +168,22 @@ MOBILE
 
 	nav ul li:hover {
 	  background: #CDCDCD;
+	}
+
+/*
+MOBILE
+*/
+@media screen and (max-width: 600px) and (min-width: 0px) {
+	.navbar {
+		visibility: hidden;
+	}
+
+	nav {
+		visibility: visible;
+		z-index: 2;
+	}
+
+	.menu {
+		visibility: visible;
 	}
 }
