@@ -70,9 +70,13 @@ function populateHeader(jsonObj) {
     header.appendChild(link);
 }
 
-  var myPara = document.createElement('h5');
-  myPara.textContent = 'Also known as ' + jsonObj['internetNickname'];
-  header.appendChild(myPara);
+  var resume = document.createElement("a");
+  var myPara = document.createElement("h5");
+  resume.href = jsonObj['resume'];
+  resume.class = 'resume'
+  myPara.textContent = ' Download Resume';
+  resume.appendChild(myPara);
+  header.appendChild(resume);
 }
 
 function showInfo(jsonObj) {
