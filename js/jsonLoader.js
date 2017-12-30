@@ -91,7 +91,7 @@ function showInfo(jsonObj) {
     myPara1.textContent = 'Project: ' + info[i].projectName;
     myPara1.id = info[i].projectName.replace(" ", "");
 
-    gitHub.href = jsonObj[info[i].gitHub];
+    gitHub.href = info[i].gitHub;
     gitHub.alt = info[i].projectName.capitalize();
     gitHub.id = info[i].projectName.capitalize();
     gitHub.class = info[i].projectName.capitalize();
