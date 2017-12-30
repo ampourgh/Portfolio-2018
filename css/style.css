@@ -45,8 +45,7 @@ header {
 	margin: 0;
 	line-height: 50%;
 	text-align: center;
-	background: rgba(240,230,140, .7);
-	margin: 0 30%;
+
 }
 
 /*
@@ -83,7 +82,7 @@ NAVIGATION BAR
 	right: 2%;
 }
 
-.wallpaper {
+.wallpaper-front {
     position: absolute;
 		width: 100%;
 		height: 100%;
@@ -91,7 +90,21 @@ NAVIGATION BAR
 		left: 0;
 		padding-left: 0;
     z-index: -1;
-		background-image: url(../img/wallpaper.jpg);
+		background: linear-gradient(rgba(60, 20, 0, .0), rgba(255, 255, 255, 1) 55%);
+		/*background-color: rgba(0, 35, 35, 0.5);*/
+		/*background-size: 20%;*/
+}
+
+.wallpaper {
+    position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		padding-left: 0;
+    z-index: -2;
+		background: url(../img/wallpaper.jpg);
+		/*background-image: url(../img/wallpaper.jpg);*/
 		background-size: 20%;
 }
 
