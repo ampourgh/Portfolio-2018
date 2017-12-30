@@ -91,10 +91,18 @@ function showInfo(jsonObj) {
     var myPara3 = document.createElement('p');
     var myList = document.createElement('ul');
 
+    // Project name
     myH2.textContent = info[i].name;
     myPara1.textContent = 'Project: ' + info[i].projectName;
     myPara1.id = info[i].projectName.replace(" ", "");
 
+    // Project image
+    var image = document.createElement("img");
+    image.src = 'img/' + info[i].projectName.replace(" ", "") + '.jpg';
+    image.class = 'image';
+    image.id = 'image';
+
+    // GitHub to project
     gitHub.href = info[i].gitHub;
     gitHub.alt = info[i].projectName.capitalize();
     gitHub.id = info[i].projectName.capitalize();
@@ -105,7 +113,7 @@ function showInfo(jsonObj) {
     imgGitHub.src = 'img/gitHub.svg';
     gitHub.appendChild(imgGitHub);
 
-
+    // About project
     myPara3.textContent = 'Info:';
     var aboutProjects = info[i].aboutProject;
     for(var j = 0; j < aboutProjects.length; j++) {
@@ -113,8 +121,11 @@ function showInfo(jsonObj) {
       listItem.textContent = aboutProjects[j];
       myList.appendChild(listItem);
     }
+
+    // Append to article
     myArticle.appendChild(myH2);
     myArticle.appendChild(myPara1);
+    myArticle.appendChild(image);
     myArticle.appendChild(gitHub);
     myArticle.appendChild(myPara2);
     myArticle.appendChild(myPara3);
