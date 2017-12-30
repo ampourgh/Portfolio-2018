@@ -8,7 +8,7 @@ a {
 }
 
 h1 {
-  font-family: 'Zilla Slab Highlight', sans-serif;
+  font-family: 'Khula', sans-serif;
   font-size: 70px;
 }
 
@@ -78,7 +78,7 @@ NAVIGATION BAR
 
 .goHome {
 	position: fixed;
-	bottom: 0;
+	bottom: 2%;
 	right: 2%;
 }
 
@@ -89,10 +89,8 @@ NAVIGATION BAR
 		top: 0;
 		left: 0;
 		padding-left: 0;
-    z-index: -1;
+    z-index: -3;
 		background: linear-gradient(rgba(60, 20, 0, .0), rgba(255, 255, 255, 1) 55%);
-		/*background-color: rgba(0, 35, 35, 0.5);*/
-		/*background-size: 20%;*/
 }
 
 .wallpaper {
@@ -102,7 +100,7 @@ NAVIGATION BAR
 		top: 0;
 		left: 0;
 		padding-left: 0;
-    z-index: -2;
+    z-index: -4;
 		background: url(../img/wallpaper.jpg);
 		/*background-image: url(../img/wallpaper.jpg);*/
 		background-size: 20%;
@@ -116,13 +114,25 @@ BODY
   text-align: center;
 }
 
-.down {
-	background: rgba(240,230,140, .7);
+.text {
+	color: #fff;
+	background: rgb(50, 50, 50);
 	line-height: 50px;
-	border-radius:50px;
+	border-radius: 50px;
 	height: 45px;
 	width: 45px;
 	margin: auto;
+	z-index: -1;
+}
+
+.up {
+	padding-left: 3px;
+	line-height: 45px;
+}
+
+.home {
+	padding-left: 9px;
+	line-height: 45px;
 }
 
 article {
