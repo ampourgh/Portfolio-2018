@@ -59,8 +59,8 @@ function populateHeader(jsonObj) {
 
     link.href = jsonObj[socialMedia[i]];
     link.alt = socialMedia[i].capitalize();
-    link.id = socialMedia[i].capitalize();
-    link.class = socialMedia[i].capitalize();
+    link.id = 'social-media';
+    link.class = 'social-media';
     link.title = socialMedia[i].capitalize();
 
     var img = document.createElement("img");
