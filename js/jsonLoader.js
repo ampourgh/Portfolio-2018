@@ -7,9 +7,9 @@ request.responseType = 'json';
 request.send();
 request.onload = function() {
   var profileInfo = request.response;
+  populatenavbar(profileInfo);
   populateHeader(profileInfo);
   showInfo(profileInfo);
-  populatenavbar(profileInfo);
 }
 
 function populatenavbar(jsonObj) {
@@ -101,6 +101,23 @@ function showInfo(jsonObj) {
     image.src = 'img/' + info[i].projectName.replace(" ", "") + '.jpg';
     image.class = 'image';
     image.id = 'image';
+
+    // Modal
+    var modal = document.getElementById('myModal');
+    var imageModal = document.getElementById('imageModal');
+
+    image.onclick = function(){
+      modal.style.display = "block";
+      imageModal.src = this.src;
+    }
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
 
     // GitHub to project
     gitHub.href = info[i].gitHub;
