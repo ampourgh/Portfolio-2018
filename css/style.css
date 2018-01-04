@@ -222,81 +222,81 @@ section ul {
 }
 
 #image {
+	padding-left: 0;
+	z-index: -1;
 	width: 400px;
   height: 200px;
   margin: -65px 0 0 60%;
+	border-radius: 5px;
+  cursor: pointer;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+	overflow: hidden;
+	max-width: 100%;
 }
 
-#social-media {
-	fill: tomato;
-  fill-rule: evenodd;
-}
-
-#social-media:hover {
-	fill: tomato;
-  fill-rule: evenodd;
+#image:hover {
+	z-index: -1;
+	-moz-transform: scale(1.025);
+	-webkit-transform: scale(1.025);
+	transform: scale(1.025);
 }
 
 /*
 MODAL CONTENT
 */
-#image {
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-#image:hover {opacity: 0.7;}
 
 /* The Modal (background) */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
 }
 
 /* Modal Content (image) */
 .modal-content {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
+	padding-left: 0;
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
 }
 
 @-webkit-keyframes zoom {
-    from {-webkit-transform:scale(0)}
-    to {-webkit-transform:scale(1)}
+  from {-webkit-transform:scale(0)}
+  to {-webkit-transform:scale(1)}
 }
 
 @keyframes zoom {
-    from {transform:scale(0)}
-    to {transform:scale(1)}
+  from {transform:scale(0)}
+  to {transform:scale(1)}
 }
 
 /* The Close Button */
 .close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #fff;
+  font-size: 250%;
+  font-weight: bold;
+  transition: 0.3s;
 }
 
 .close:hover,
 .close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 hr {
