@@ -234,6 +234,7 @@ section ul {
 	transition: all 0.3s;
 	overflow: hidden;
 	max-width: 100%;
+	
 }
 
 #image:hover {
