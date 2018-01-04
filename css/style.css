@@ -12,6 +12,11 @@ h1 {
   font-size: 70px;
 }
 
+h2 {
+	border-top: 100px;
+
+}
+
 h5 {
 	font-size: 25px;
 }
@@ -292,6 +297,11 @@ MODAL CONTENT
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
+}
+
+hr {
+	z-index: -1;
+	border-top: 1px solid #D6CECE;
 }
 
 /* 100% Image Width on Smaller Screens */

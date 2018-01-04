@@ -83,6 +83,7 @@ function showInfo(jsonObj) {
   var info = jsonObj['members'];
   for(var i = 0; i < info.length; i++) {
     var myArticle = document.createElement('article');
+    var hr = document.createElement('hr');
     var gitHub = document.createElement("a");
     // var webPage = document.createElement("a");
     var myH2 = document.createElement('h2');
@@ -141,6 +142,7 @@ function showInfo(jsonObj) {
 
     // Append to article
     myArticle.appendChild(myH2);
+    myArticle.appendChild(hr);
     myArticle.appendChild(myPara1);
     myArticle.appendChild(image);
     myArticle.appendChild(gitHub);
