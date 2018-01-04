@@ -267,8 +267,8 @@ MODAL CONTENT
 	padding-left: 0;
   margin: auto;
   display: block;
-  width: 80%;
-  max-width: 700px;
+  width: 100%;
+  max-width: 1000px;
 }
 
 @-webkit-keyframes zoom {
