@@ -87,14 +87,14 @@ function showInfo(jsonObj) {
     var gitHub = document.createElement("a");
     // var webPage = document.createElement("a");
     var myH2 = document.createElement('h2');
-    var myPara1 = document.createElement('p');
+    var myPara1 = document.createElement('h2');
     var myPara2 = document.createElement('p');
     var myPara3 = document.createElement('p');
     var myList = document.createElement('ul');
 
     // Project name
     myH2.textContent = info[i].name;
-    myPara1.textContent = 'Project: ' + info[i].projectName;
+    myPara1.textContent = info[i].projectName;
     myPara1.id = info[i].projectName.replace(" ", "");
 
     // Project image
@@ -118,6 +118,13 @@ function showInfo(jsonObj) {
     // When the user clicks on <span> (x), close the modal
     span.onclick = function() {
         modal.style.display = "none";
+    }
+
+    // Outside click close
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
     }
 
     // GitHub to project
