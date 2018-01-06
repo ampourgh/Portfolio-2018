@@ -120,7 +120,7 @@ function showInfo(jsonObj) {
         modal.style.display = "none";
     }
 
-    // Outside click close
+    // Outside click 
     window.onclick = function(event) {
         if (event.target == modal) {
             modal.style.display = "none";
