@@ -95,6 +95,7 @@ function showInfo(jsonObj) {
     // Project name
     myH2.textContent = info[i].name;
     myPara1.textContent = info[i].projectName;
+    myPara1.class = "ProjectName";
     myPara1.id = info[i].projectName.replace(" ", "");
 
     // Project image
@@ -120,7 +121,7 @@ function showInfo(jsonObj) {
         modal.style.display = "none";
     }
 
-    // Outside click 
+    // Outside click
     window.onclick = function(event) {
         if (event.target == modal) {
             modal.style.display = "none";
@@ -136,6 +137,7 @@ function showInfo(jsonObj) {
 
     var imgGitHub = document.createElement("img");
     imgGitHub.src = 'img/gitHub.svg';
+    imgGitHub.id = 'GitHub';
     gitHub.appendChild(imgGitHub);
 
     // About project
@@ -151,8 +153,8 @@ function showInfo(jsonObj) {
     myArticle.appendChild(myH2);
     myArticle.appendChild(hr);
     myArticle.appendChild(myPara1);
-    myArticle.appendChild(image);
     myArticle.appendChild(gitHub);
+    myArticle.appendChild(image);
     myArticle.appendChild(myPara2);
     myArticle.appendChild(myPara3);
     myArticle.appendChild(myList);

@@ -74,12 +74,10 @@ NAVIGATION BAR
   border-radius: 0;
 	position: -webkit-sticky;
 	position: sticky;
-	width: 33%;
 	height: 0;
 	margin: 0 auto;
-	top: 2px;
+	top: 0;
 	text-align: center;
-	border-radius: 15px;
 }
 
 .navbar a {
@@ -330,6 +328,18 @@ hr {
 /*
 MOBILE
 */
+@media screen and (max-width: 1000px) and (min-width: 0px) {
+	#GitHub {
+	  display: block;
+		margin: -15px 0 10px 0;
+	}
+
+	#image {
+		width: 90%;
+    height: auto;
+	  margin: 0;
+	}
+}
 @media screen and (max-width: 600px) and (min-width: 0px) {
 
 	.navbar {
@@ -360,12 +370,6 @@ MOBILE
 
 	.menu {
 		visibility: visible;
-	}
-
-	#image {
-		width: 90%;
-    height: auto;
-	  margin: 0;
 	}
 }
 
