@@ -95,6 +95,25 @@ NAVIGATION BAR
   border-image-slice: 1;
 }
 
+.home-button {
+	margin-right: 15px;
+}
+
+.home-button a{
+	background: tomato;
+	padding: 0 5px;
+	border-radius: 10px;
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s;
+	transition: all 1s;
+}
+
+.home-button a:hover {
+	color: #fff;
+	background: red;
+	border-style : none;
+}
+
 .projectsNavbar {
   display: inline-block;
 }
@@ -329,6 +348,14 @@ hr {
 MOBILE
 */
 @media screen and (max-width: 1000px) and (min-width: 0px) {
+
+	.portrait {
+		height: 25%;
+		width: 25%;
+		border: 10px solid;
+		padding: 2px;
+	}
+
 	#GitHub {
 	  display: block;
 		margin: -15px 0 10px 0;
@@ -346,6 +373,12 @@ MOBILE
 		visibility: hidden;
 		top: 0;
 		height: 0;
+	}
+
+	.navbar a{
+		-moz-transition: all 0s;
+		-webkit-transition: all 0s;
+		transition: all 0s;
 	}
 
 	.portrait {
