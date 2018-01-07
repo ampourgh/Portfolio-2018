@@ -45,8 +45,8 @@ function populatenavbar(jsonObj) {
 
 function populateHeader(jsonObj) {
 
-  var myPicture = document.getElementById('portrait');
-  myPicture.src = jsonObj['Picture'];
+  var myPortrait = document.getElementById('portrait');
+  myPortrait.src = jsonObj['potrait'];
 
   var myH1 = document.createElement('h1');
   myH1.textContent = jsonObj['Name'];
