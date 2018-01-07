@@ -425,6 +425,30 @@ MOBILE
 }
 
 @media screen and (max-width: 350px) and (min-width: 0px) {
+	h1 {
+	  font-size: 50px;
+	}
+
+	h2 {
+		font-size: 35px;
+	}
+
+	p {
+		font-size: 25px;
+	}
+
+	li {
+		font-size: 20px;
+	}
+
+	a {
+		font-size: 20px;
+	}
+
+	#GitHub {
+		height: 20px;
+		width: auto;
+	}
 
 	.portrait {
 		height: 60%;
@@ -437,7 +461,7 @@ MOBILE
 		margin: 0 3%;
 	}
 
-	br {
+	.break br {
 		display: none;
 	}
 }
