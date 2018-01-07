@@ -44,6 +44,10 @@ function populatenavbar(jsonObj) {
 }
 
 function populateHeader(jsonObj) {
+
+  var myPicture = document.getElementById('portrait');
+  myPicture.src = jsonObj['Picture'];
+
   var myH1 = document.createElement('h1');
   myH1.textContent = jsonObj['Name'];
   header.appendChild(myH1);
@@ -118,14 +122,14 @@ function showInfo(jsonObj) {
 
     // When the user clicks on <span> (x), close the modal
     span.onclick = function() {
-        modal.style.display = "none";
+      modal.style.display = "none";
     }
 
     // Outside click
     window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
     }
 
     // GitHub to project
