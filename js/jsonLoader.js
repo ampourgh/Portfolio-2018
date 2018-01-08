@@ -46,10 +46,10 @@ function populatenavbar(jsonObj) {
 function populateHeader(jsonObj) {
 
   var myPortrait = document.getElementById('portrait');
-  myPortrait.src = jsonObj['potrait'];
+  myPortrait.src = jsonObj['portrait'];
 
   var myH1 = document.createElement('h1');
-  myH1.textContent = jsonObj['Name'];
+  myH1.textContent = jsonObj['name'];
   header.appendChild(myH1);
 
   socialMedia = ['gitHub', 'linkedIn', 'CodePen', 'reddit', 'twitter', 'gmail']

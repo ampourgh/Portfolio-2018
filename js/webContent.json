@@ -1,7 +1,7 @@
 {
-  "Name" : "Amir Pourghaed",
-  "portait" : "/img/portrait.jpg",
-  "resume" : "/img/resume.jpg",
+  "portait" : "img/portrait.jpg",
+  "name" : "Amir Pourghaed",
+  "resume" : "img/resume.jpg",
   "gitHub" : "http://www.github.com/ampourgh",
   "linkedIn" : "https://www.linkedin.com/in/ampourgh/",
   "CodePen" : "https://codepen.io/ampourgh/",
