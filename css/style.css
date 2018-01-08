@@ -80,7 +80,7 @@ NAVIGATION BAR
 */
 
 .navbar {
-  background-color: #000;
+	background-color: #fff;
   border-radius: 0;
 	position: -webkit-sticky;
 	position: sticky;
@@ -93,23 +93,44 @@ NAVIGATION BAR
 .navbar a {
 	font-size: 15px;
 	font-family: 'Coda';
-	color: #fff;
+	color: #000;
 	text-decoration: none;
 	margin-left: 7px;
 }
 
 .navbar a:hover {
-	color: #BBD200;
-	border-bottom: 8px solid transparent;
-  border-image: linear-gradient(to right, #00E512 , #008DBF);
-  border-image-slice: 1;
+	transition: .1s;
+	color: yellow;
 }
 
-.home-button {
-	margin-right: 15px;
+.scrolled {
+ transition: 0.5s ease;
+}
+
+.scrolled.navbar {
+  height: 50px;
+  background-color: #000;
+  transition: 0.5s ease;
+}
+
+.scrolled.navbar a {
+	color: #fff;
+}
+
+.scrolled.navbar a:hover {
+	color: #BBD200;
+	padding-bottom: 8px;
+	border-bottom: 8px solid transparent;
+	border-image: linear-gradient(to right, #00E512 , #008DBF);
+	border-image-slice: 1;
+}
+
+.home-button a:hover {
+	visibility: hidden;
 }
 
 .home-button a{
+	visibility: hidden;
 	background: tomato;
 	padding: 0 5px;
 	border-radius: 10px;
@@ -118,7 +139,18 @@ NAVIGATION BAR
 	transition: all 1s;
 }
 
-.home-button a:hover {
+.scrolled.navbar .home-button a{
+	visibility: visible;
+	background: tomato;
+	padding: 0 5px;
+	border-radius: 10px;
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s;
+	transition: all 1s;
+}
+
+.scrolled.navbar .home-button a:hover {
+	visibility: visible;
 	color: #fff;
 	background: red;
 	border-style : none;
