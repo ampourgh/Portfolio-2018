@@ -93,7 +93,6 @@ function showInfo(jsonObj) {
     var myH2 = document.createElement('h2');
     var myPara1 = document.createElement('h2');
     var myPara2 = document.createElement('p');
-    var myPara3 = document.createElement('p');
     var myList = document.createElement('ul');
 
     // Project name
@@ -145,7 +144,6 @@ function showInfo(jsonObj) {
     gitHub.appendChild(imgGitHub);
 
     // About project
-    myPara3.textContent = 'Info:';
     var aboutProjects = info[i].aboutProject;
     for(var j = 0; j < aboutProjects.length; j++) {
       var listItem = document.createElement('li');
@@ -157,11 +155,11 @@ function showInfo(jsonObj) {
     myArticle.appendChild(myH2);
     myArticle.appendChild(hr);
     myArticle.appendChild(myPara1);
-    myArticle.appendChild(gitHub);
     myArticle.appendChild(image);
     myArticle.appendChild(myPara2);
-    myArticle.appendChild(myPara3);
     myArticle.appendChild(myList);
     section.appendChild(myArticle);
+    myArticle.appendChild(gitHub);
+    myArticle.appendChild(gitHub);
   }
 }

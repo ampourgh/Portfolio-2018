@@ -219,7 +219,7 @@ BODY
 }
 
 article {
-	margin: 100px 100px;
+	margin: 15% 15%;
 }
 
 .menu {
@@ -288,10 +288,11 @@ nav ul li {
 }
 
 section ul {
-  -moz-column-width: 12em;
+  /*-moz-column-width: 12em;
   -moz-columns: 12em;
   -webkit-columns: 12em;
-  columns: 12em;
+  columns: 12em;*/
+	margin: -300px 0 0 60%;
 }
 
 #image {
@@ -299,7 +300,7 @@ section ul {
 	z-index: -1;
 	width: 400px;
   height: 200px;
-  margin: -150px 0 0 60%;
+  /*margin: -150px 0 0 60%;*/
 	border-radius: 5px;
   cursor: pointer;
 	-moz-transition: all 0.3s;
