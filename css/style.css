@@ -88,6 +88,7 @@ NAVIGATION BAR
 	margin: 0 auto;
 	top: 0;
 	text-align: center;
+	margin-right: 5%;
 }
 
 .navbar a {
@@ -111,6 +112,7 @@ NAVIGATION BAR
   height: 50px;
   background-color: #000;
   transition: 0.5s ease;
+	margin-right: 0;
 }
 
 .scrolled.navbar a {
@@ -408,7 +410,13 @@ MOBILE
     height: auto;
 	  margin: 0;
 	}
+
+	section ul {
+		margin: 20px 0;
+	}
+	
 }
+
 
 @media screen and (max-width: 600px) and (min-width: 0px) {
 
