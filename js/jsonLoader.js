@@ -12,6 +12,7 @@ request.onload = function() {
   showInfo(profileInfo);
 }
 
+
 function populatenavbar(jsonObj) {
   var info = jsonObj['members'];
     for(var i = 0; i < info.length; i++) {
@@ -22,10 +23,7 @@ function populatenavbar(jsonObj) {
       link.appendChild(text);
       myNavbar.appendChild(link);
 
-      $(link).on('click', function(e) {
-        e.preventDefault();
-        $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 320, 'linear');
-      });
+      onClick(link);
     }
 
     for(var i = 0; i < info.length; i++) {
@@ -36,10 +34,7 @@ function populatenavbar(jsonObj) {
       link2.appendChild(text2);
       myMobileNavbar.appendChild(link2);
 
-      $(link2).on('click', function(e) {
-        e.preventDefault();
-        $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 320, 'linear');
-      });
+      onClick(link2);
     }
 }
 
@@ -83,8 +78,23 @@ function populateHeader(jsonObj) {
   header.appendChild(resume);
 }
 
+function onClick(link){
+  $(link).on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 320, 'linear');
+  });
+}
+
+
 function showInfo(jsonObj) {
   var info = jsonObj['members'];
+
+  // the down chevron in the first page, goes to the first project
+  var sectionStart = document.getElementById('section-start');
+  sectionStart.setAttribute("href", "#" + info[0].projectName.replace(" ", ""));
+
+  onClick(sectionStart);
+
   for(var i = 0; i < info.length; i++) {
     var myArticle = document.createElement('article');
     var hr = document.createElement('hr');

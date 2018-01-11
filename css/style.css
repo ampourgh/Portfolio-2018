@@ -64,11 +64,6 @@ section *[id]:before {
   padding-top: 150px;
 }
 
-#section-start {
-	margin-top: -5px;
-	padding-top: 5px;
-}
-
 header {
 	margin: 0;
 	line-height: 50%;
