@@ -32,8 +32,7 @@
       "gitHub" : "https://github.com/ampourgh/Portfolio-2018",
       "aboutProject" : [
         "Content of page is stored within JSON file, for easy adjustment of content without the need to modify the HTML pages.",
-        "Hyperlinks feature smooth scroll up and down the page, to make it clear that the user is traversing through the same webpage.",
-        ""
+        "Hyperlinks feature smooth scroll up and down the page, to make it clear that the user is traversing through the same webpage."
       ]
     }
   ]
