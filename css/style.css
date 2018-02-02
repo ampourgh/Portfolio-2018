@@ -223,13 +223,18 @@ BODY
 
 .text {
 	color: #fff;
-	background: rgb(50, 50, 50);
+	border: 2px solid rgba(50, 50, 50, 1);;
+	background: rgba(50, 50, 50, .6);
 	line-height: 50px;
-	border-radius: 50px;
+	border-radius: 100%;
 	height: 45px;
 	width: 45px;
 	margin: auto;
 	z-index: -1;
+}
+
+a:hover span {
+	background: rgb(50, 50, 50);
 }
 
 .up {
@@ -238,17 +243,9 @@ BODY
 }
 
 .home {
+	border-radius: 100%;
 	padding-left: 7.5px;
 	line-height: 42px;
-	border: 2px solid black;
-	background: rgba(50, 50, 50, 1);
-}
-
-a .glyphicon-home:hover {
-	transition: 1s ease-out;
-	-webkit-transform: rotateZ(360deg);
-	-moz-transform: rotateZ(360deg);
-	transform: rotateZ(360deg);
 }
 
 article {
