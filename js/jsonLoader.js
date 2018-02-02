@@ -64,7 +64,13 @@ function populateHeader(jsonObj) {
 
     var img = document.createElement("img");
     img.src = 'img/' + socialMedia[i] + '.svg';
+
+    var img2 = document.createElement("img");
+    img2.src = 'img/' + socialMedia[i] + '_highlight.svg';
+    img2.id = 'img-top'
+
     link.appendChild(img);
+    link.appendChild(img2);
 
     header.appendChild(link);
 }

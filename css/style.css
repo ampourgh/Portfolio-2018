@@ -136,6 +136,24 @@ NAVIGATION BAR
 	transition: all 1s;
 }
 
+#social-media {
+		position: relative;
+		display: inline-block;
+		margin: 0 5px;
+}
+
+#social-media #img-top {
+		display: none;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 99;
+}
+
+#social-media:hover #img-top {
+		display: inline;
+}
+
 .scrolled.navbar .home-button a{
 	visibility: visible;
 	background: tomato;
