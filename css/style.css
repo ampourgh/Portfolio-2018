@@ -96,7 +96,7 @@ NAVIGATION BAR
 
 .navbar a:hover {
 	transition: .1s;
-	color: yellow;
+	color: tomato;
 }
 
 .scrolled {
@@ -223,7 +223,7 @@ BODY
 
 .text {
 	color: #fff;
-	border: 2px solid rgba(50, 50, 50, 1);;
+	border: 2px solid rgba(50, 50, 50, 1);
 	background: rgba(50, 50, 50, .6);
 	line-height: 50px;
 	border-radius: 100%;
@@ -231,6 +231,61 @@ BODY
 	width: 45px;
 	margin: auto;
 	z-index: -1;
+}
+
+/* scroll down chevron */
+.scrolldown {
+	text-align: center;
+}
+
+.scroll_btn {
+	background: url(../img/scroll.gif) 50% 50% no-repeat rgba(50, 50, 50, 1);
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+  -moz-opacity: .85;
+  -webkit-opacity: .85;
+  -o-opacity: .85;
+  opacity: .85;
+	display: block;
+	height: 45px;
+	margin: 42px auto;
+	-webkit-transition: all 500ms ease-in-out 0s;
+	-moz-transition: all 500ms ease-in-out 0s;
+	-ms-transition: all 500ms ease-in-out 0s;
+	-0-transition: all 500ms ease-in-out 0s;
+	transition: all 500ms ease-in-out 0s;
+	width: 45px;
+	position:absolute;
+	bottom:0;
+}
+
+.border {
+  position: relative;
+}
+
+.border:before {
+  content: " ";
+  position: absolute;
+  z-index: -1;
+  border-radius: 100%;
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+  border: 2px solid #fff;
+}
+
+.scroll_btn:hover {
+	background: url(../img/scroll.gif) 50% 50% no-repeat #ff6347;
+  -moz-opacity: 1;
+  -webkit-opacity: 1;
+  -o-opacity: 1;
+  opacity: 1;
+	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-o-transform: scale(1.1);
 }
 
 a:hover span {
