@@ -10,6 +10,14 @@
   "gmail" : "mailto:ampourgh@gmail.com?Subject=Greetings%20and%20Salutations!",
   "members" : [
     {
+      "projectName" : "Restaurant",
+      "gitHub" : "https://github.com/ampourgh/Restaurant",
+      "aboutProject" : [
+        "Utilizes React.js to display and filter through content, including topings and images of food.",
+        "Single page with drop down menu for ease of navigating around the website."
+      ]
+    },
+    {
       "projectName" : "Item Catalog",
       "gitHub" : "https://github.com/ampourgh/Item-Catalog",
       "aboutProject" : [
