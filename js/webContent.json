@@ -14,7 +14,8 @@
       "gitHub" : "https://github.com/ampourgh/Restaurant",
       "aboutProject" : [
         "Utilizes React.js to display and filter through content, including topings and images of food.",
-        "Single page with drop down menu for ease of navigating around the website."
+        "Single HTML page with CSS drop down menu for ease of navigating around the website.",
+        "Efficient way of showcasing Restaurants' information to customers so that they can look up the informaton they are looking for."
       ]
     },
     {
